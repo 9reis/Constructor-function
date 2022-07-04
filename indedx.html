@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor Function</title>
+</head>
+<body>
+
+    <script>
+        //Criar um objeto postagem 
+        //titulo, postagem, autor, visualizacoes, comentarios, estaAoVivo
+
+        function Postagem(titulo,mensagem,autor){
+            this.titulo = titulo,
+            this.mensagem = mensagem,
+            this.autor = autor,
+            this.visualizacoes = 0,
+            this.comentário = [],
+            this.estaAoVivo = false
+        }
+
+        let postagem = new Postagem('a','b','c')
+        console.log(postagem);
+
+    </script>
+    
+</body>
+</html>
